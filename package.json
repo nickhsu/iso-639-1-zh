@@ -1,0 +1,29 @@
+{
+  "name": "iso-639-1-zh",
+  "version": "0.1.0",
+  "description": "Chinese name for iso-639-1 languages",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meikidd/iso-639-1-zh.git"
+  },
+  "keywords": [
+    "iso-639-1",
+    "language"
+  ],
+  "author": "meikidd <meikidd@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meikidd/iso-639-1-zh/issues"
+  },
+  "homepage": "https://github.com/meikidd/iso-639-1-zh#readme",
+  "dependencies": {
+    "iso-639-1": "~1.1.0"
+  },
+  "devDependencies": {
+    "babel": "~5.8.12"
+  }
+}
