@@ -64,6 +64,4 @@ var ISO639ZH = (function (_ISO639) {
 })(_iso63912['default']);
 
 exports['default'] = ISO639ZH;
-
-console.log(ISO639ZH.getLanguages(['zh', 'en']));
 module.exports = exports['default'];
