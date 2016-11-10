@@ -1,6 +1,6 @@
 'use strict';
 
-Object.defineProperty(exports, '__esModule', {
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var LANGUAGES_ZH_NAMES = {
@@ -189,4 +189,5 @@ var LANGUAGES_ZH_NAMES = {
   'zh': '中文',
   'zu': '祖鲁语'
 };
-exports.LANGUAGES_ZH_NAMES = LANGUAGES_ZH_NAMES;
+
+exports.default = LANGUAGES_ZH_NAMES;

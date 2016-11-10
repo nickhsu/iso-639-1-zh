@@ -1,4 +1,4 @@
-export var LANGUAGES_ZH_NAMES = {
+const LANGUAGES_ZH_NAMES = {
   'aa': '阿法尔语',
   'ab': '阿布哈兹语',
   'ae': '阿维斯陀语',
@@ -184,3 +184,5 @@ export var LANGUAGES_ZH_NAMES = {
   'zh': '中文',
   'zu': '祖鲁语'
 }
+
+export default LANGUAGES_ZH_NAMES
