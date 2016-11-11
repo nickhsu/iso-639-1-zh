@@ -4,11 +4,37 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+var _values = require('babel-runtime/core-js/object/values');
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+var _values2 = _interopRequireDefault(_values);
 
-var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+var _extends2 = require('babel-runtime/helpers/extends');
+
+var _extends3 = _interopRequireDefault(_extends2);
+
+var _getPrototypeOf = require('babel-runtime/core-js/object/get-prototype-of');
+
+var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+var _classCallCheck2 = require('babel-runtime/helpers/classCallCheck');
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = require('babel-runtime/helpers/createClass');
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+var _possibleConstructorReturn2 = require('babel-runtime/helpers/possibleConstructorReturn');
+
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+var _get2 = require('babel-runtime/helpers/get');
+
+var _get3 = _interopRequireDefault(_get2);
+
+var _inherits2 = require('babel-runtime/helpers/inherits');
+
+var _inherits3 = _interopRequireDefault(_inherits2);
 
 var _iso = require('iso-639-1');
 
@@ -20,40 +46,32 @@ var _data2 = _interopRequireDefault(_data);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
 var ISO639ZH = function (_ISO) {
-  _inherits(ISO639ZH, _ISO);
+  (0, _inherits3.default)(ISO639ZH, _ISO);
 
   function ISO639ZH() {
-    _classCallCheck(this, ISO639ZH);
-
-    return _possibleConstructorReturn(this, (ISO639ZH.__proto__ || Object.getPrototypeOf(ISO639ZH)).apply(this, arguments));
+    (0, _classCallCheck3.default)(this, ISO639ZH);
+    return (0, _possibleConstructorReturn3.default)(this, (ISO639ZH.__proto__ || (0, _getPrototypeOf2.default)(ISO639ZH)).apply(this, arguments));
   }
 
-  _createClass(ISO639ZH, null, [{
+  (0, _createClass3.default)(ISO639ZH, null, [{
     key: 'getLanguages',
     value: function getLanguages(codes) {
-      return _get(ISO639ZH.__proto__ || Object.getPrototypeOf(ISO639ZH), 'getLanguages', this).call(this, codes).map(function (l) {
-        return _extends({}, l, { zhName: ISO639ZH.getZhName(l.code) });
+      return (0, _get3.default)(ISO639ZH.__proto__ || (0, _getPrototypeOf2.default)(ISO639ZH), 'getLanguages', this).call(this, codes).map(function (l) {
+        return (0, _extends3.default)({}, l, { zhName: ISO639ZH.getZhName(l.code) });
       });
     }
   }, {
     key: 'getZhName',
     value: function getZhName(code) {
-      return _get(ISO639ZH.__proto__ || Object.getPrototypeOf(ISO639ZH), 'validate', this).call(this, code) ? _data2.default[code] : '';
+      return (0, _get3.default)(ISO639ZH.__proto__ || (0, _getPrototypeOf2.default)(ISO639ZH), 'validate', this).call(this, code) ? _data2.default[code] : '';
     }
   }, {
     key: 'getAllZhNames',
     value: function getAllZhNames() {
-      return Object.values(_data2.default);
+      return (0, _values2.default)(_data2.default);
     }
   }]);
-
   return ISO639ZH;
 }(_iso2.default);
 

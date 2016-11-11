@@ -1,4 +1,3 @@
-import 'babel-polyfill'
 import assert from 'assert';
 import ISO639ZH from '../build/index';
 import LANGUAGES_ZH_NAMES from '../build/data';
@@ -6,7 +5,7 @@ import LANGUAGES_ZH_NAMES from '../build/data';
 const zhNameList = Object.values(LANGUAGES_ZH_NAMES)
 
 describe('getZhName()', () => {
-  it('en', () => assert.equal(ISO639ZH.getZhName('en'), '英文'))
+  it('en', () => assert.equal(ISO639ZH.getZhName('en'), '英语'))
   it('zh', () => assert.equal(ISO639ZH.getZhName('zh'), '中文'))
 })
 
