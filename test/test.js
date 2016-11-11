@@ -1,4 +1,3 @@
-import 'babel-polyfill'
 import assert from 'assert';
 import ISO639ZH from '../build/index';
 import LANGUAGES_ZH_NAMES from '../build/data';
